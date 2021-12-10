@@ -9,9 +9,9 @@
 <form method="post" action="form.php">
     <div>
         <label for="age">Возраст</label>
-        <input type="number" min="18" max="100" name="age" id="age" required>
+        <input type="number" min="18" max="100" name="age" id="age" value="18" step="1" required autofocus>
     </div>
-    <div class="radio">
+    <div>
         <span>Зарплатный клиент банка</span>
         <label for="client">
             <input type="checkbox" name="client" value="да" id="client">да
@@ -19,15 +19,16 @@
     </div>
     <div>
         <label for="cost">Стоимость недвижимости</label>
-        <input type="number" min="18" max="25000000" name="cost" id="cost" required>
+        <input type="number" min="0" max="25000000" name="cost" id="cost" step="1000000" value="0" required>
     </div>
     <div>
         <label for="initial payment">Первоначальный взнос</label>
-        <input type="number" min="0" max="25000000" name="initial payment" id="initial payment" required>
+        <input type="number" min="0" max="25000000" name="initial payment"
+               step="1000000" value="0" id="initial payment" required>
     </div>
     <div>
         <label for="time">Срок кридитования</label>
-        <input type="number" min="36" max="360" name="time" id="time" required>
+        <input type="number" min="36" max="360" name="time" id="time" value="36" step="1" required>
     </div>
     <div>
         <label for="type house">Первоначальный взнос</label>
