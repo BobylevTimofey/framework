@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заполнение формы для получия заявки на расчет</title>
+</head>
+<body>
+<h1>Заявка на расчет</h1>
+<form method="post" action="form.php">
+    <div>
+        <label for="age">Возраст</label>
+        <input type="number" min="18" max="100" name="age" id="age" required>
+    </div>
+    <div class="radio">
+        <span>Зарплатный клиент банка</span>
+        <label for="client">
+            <input type="checkbox" name="client" value="да" id="client">да
+        </label>
+    </div>
+    <div>
+        <label for="cost">Стоимость недвижимости</label>
+        <input type="number" min="18" max="25000000" name="cost" id="cost" required>
+    </div>
+    <div>
+        <label for="initial payment">Первоначальный взнос</label>
+        <input type="number" min="0" max="25000000" name="initial payment" id="initial payment" required>
+    </div>
+    <div>
+        <label for="time">Срок кридитования</label>
+        <input type="number" min="36" max="360" name="time" id="time" required>
+    </div>
+    <div>
+        <label for="type house">Первоначальный взнос</label>
+        <select name="type house" id="type house">
+            <option value="Жилое">Жилое</option>
+            <option value="Нежилое">Нежилое</option>
+        </select>
+    </div>
+    <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
